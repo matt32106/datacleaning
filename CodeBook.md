@@ -7,17 +7,17 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 SubjectId
 -----------
-  Id of the subject (1 to 30) from the original dataset
+Id of the subject (1 to 30) from the original dataset
 
 Activity                  
 ----------
-  Activity labels of the subject when measures were recorded, possible values are:
-    WALKING
-    WALKING_UPSTAIRS
-    WALKING_DOWNSTAIRS
-    SITTING
-    STANDING
-    LAYING
+Activity labels of the subject when measures were recorded, possible values are:
+1. WALKING
+2. WALKING_UPSTAIRS
+3. WALKING_DOWNSTAIRS
+4. SITTING
+5. STANDING
+6. LAYING
 
 Features 
 --------
@@ -25,9 +25,8 @@ The 66 remaining columns come from the original dataset, only the mean and std v
 Columns names were slightly tweaked to be human readable.  
 **Finally, to produce the final dataset, the data for each variable were summarized by Subject/Activity using the mean (average) function.**  
 
-The following columns are provided in the final tidy dataset:
-
-"tBodyAcc.mean.X[YZ]"   (.X[YZ] means that 3 variables are provided a.X, a.Y, a.Z)  
+The following variables are provided in the final tidy dataset:
+"tBodyAcc.mean.X[YZ]"          (.X[YZ] means that 3 variables are provided a.X, a.Y, a.Z)  
 "tBodyAcc.std.X[YZ]"           
 "tGravityAcc.mean.X[YZ]"       
 "tGravityAcc.std.X[YZ]"        
@@ -64,15 +63,17 @@ The following columns are provided in the final tidy dataset:
 "fBodyBodyGyroJerkMag.mean" 
 "fBodyBodyGyroJerkMag.std" 
 
-where
-t/f: _t_ime data or Fourier transformed (_f_requency) data
-Body/Gravity: raw data were separated into _body_ and _gravity_ acceleration signals via filtering
-Acc/Gyro: signals origin is the _Acc_elerometer or the _Gyro_scope of the device
-Jerk: derivation in time of the data
-Mag: _mag_nitude of the signal
-mean/std: _Mean_ or _St_andard _d_eviation computation
+NOTE : Don't forget that the final values are the _average_ of the original data for one subject/activity, the column names were not modified in order to keep them as readable as possible.
 
-For complete reference, please see the features_info.txt file in the original dataset.
+where
+*t/f:* time data or Fourier transformed (frequency) data
+*Body/Gravity:* raw data were separated into body and gravity acceleration signals via filtering
+*Acc/Gyro:* signals origin is the Accelerometer or the Gyroscope of the device
+*Jerk:* derivation in time of the data
+*Mag:* magnitude of the signal
+*mean/std:* Mean or Standard deviation computation
+
+For complete reference, please see the *features_info.txt* file in the original dataset.
 
 
 
