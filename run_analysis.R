@@ -53,9 +53,6 @@ tmp<-gsub("\\(\\)","",tmp)       ## remove ()
 tmp<-gsub("[-]",".",tmp)         ## replace - by .
 names(tab)[-(1:2)] <- tmp        ## replaces current names with tidy labels 
 
-## save first tidy data file to disk
-write.table(tab, file="./tidyData.txt", row.names=FALSE)
-
 ####################################
 ## STEP 5. Creates a second, independent tidy data set with the average of each variable 
 ##         for each activity and each subject.
@@ -63,8 +60,6 @@ write.table(tab, file="./tidyData.txt", row.names=FALSE)
 
 tmp <- melt(tab,id=c("SubjectId","Activity"))              
 tmp <- dcast(tmp, Activity + SubjectId ~ variable, mean)
-
-## todo: rename columns to indicate that values are means
 
 
 ## save to disk
