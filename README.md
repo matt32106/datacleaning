@@ -3,30 +3,23 @@
 ## How to use the run\_analysis.R script
 
 Instructions:
-
 -   Set the working directory to the location of the run\_analysis.R
-    file
-
+    file  
 -   The unziped source data must be in a 'UCI HAR Dataset' directory in
-    the same directory
-
--   From R studio do a `source("run_analysis.R")`
-
--   This R file produces a tidy data set of the source data
-
--   Check associated codebook here
-    https://github.com/matt32106/datacleaning
-
+    the same directory  
+-   From R studio do a `source("run_analysis.R")`  
+-   This R file produces a tidy data set of the source data  
+-   Check associated codebook here https://github.com/matt32106/datacleaning  
+  
 ## run\_analysis.R code
-
+  
 **Input**: the run\_analysis script needs that the unzipped "UCI HAR
-Dataset" directory is in the working directory\
+Dataset" directory is in the working directory  
 **Ouput**: the script process the above dataset and generates a tidy
-data file (tidyDataMeans.txt) in the working directory
-
+data file (tidyDataMeans.txt) in the working directory  
+  
 The R script file follows the logic of the coursera assignment by
-processing the original dataset in 5 steps:
-
+processing the original dataset in 5 steps:  
 1.  Merges the training and the test sets to create one data set  
     -   Training and test sets files are read and put in a single data
         frame  
@@ -51,8 +44,8 @@ processing the original dataset in 5 steps:
     -   The second tidy data set is written to the working directory  
      
 	 
-## Reference
-
+## Reference  
+  
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L.
 Reyes-Ortiz.\
 Human Activity Recognition on Smartphones using a Multiclass
