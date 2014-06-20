@@ -23,7 +23,7 @@ Features
 --------
 The 66 remaining columns are a subset from the original dataset where only the *mean* and *std* variables were kept.  
 Columns names were slightly tweaked to make them more human readable.  
-__Finally, to produce the final dataset, the data for each variable were *summarized by Subject/Activity using the mean (average) function*.  __
+Finally, to produce the final dataset, the data for each variable were *summarized by Subject/Activity using the mean (average) function*.  
 
 For each Subject and Activity, the following variables are provided in the final dataset:  
 "tBodyAcc.mean.X[YZ]"          (.X[YZ] means that 3 variables are provided a.X, a.Y, a.Z)  
