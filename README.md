@@ -26,18 +26,18 @@ processing the original dataset in 5 steps:
   1. Columns are selected according to their name to keep only mean and std measures  
   2. This generates a subset of the original data frame  
 * Uses descriptive activity names to name the activities in the data set  
-  -   Activity **codes** are replaced by activity **labels**  
-4.  Appropriately labels the data set with descriptive variable names  
-  -   Column names are tweaked to be more human readable (hopefully)
-      and special characters are removed or replaced by code friendly
-      ones like . or \_  
-5.  Creates a second, independent tidy data set with the average of each
-    variable for each activity and each subject  
-  -   This first tidy data set is then melted and dcasted to generate
-      a new data frame containing only one row per activity per
-      subject containing the average (mean) of the selected features
-      values  
-  -   The second tidy data set is written to the working directory  
+  1. Activity **codes** are replaced by activity **labels**  
+* Appropriately labels the data set with descriptive variable names  
+  1. Column names are tweaked to be more human readable (hopefully)
+     and special characters are removed or replaced by code friendly
+     ones like . or \_  
+* Creates a second, independent tidy data set with the average of each
+  variable for each activity and each subject  
+  1. This first tidy data set is then melted and dcasted to generate
+     a new data frame containing only one row per activity per
+     subject containing the average (mean) of the selected features
+     values  
+  2. The second tidy data set is written to the working directory  
      
 	 
 ## Reference  
