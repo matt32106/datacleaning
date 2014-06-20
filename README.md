@@ -4,7 +4,7 @@
 
 Instructions:
 -   Download the run\_analysis.R file to your working directory  
--   Download the source data https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzip it in the working directory (this create a 'UCI HAR Dataset' directory)  
+-   Download the source data https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzip it in the working directory (this creates a 'UCI HAR Dataset' directory)  
 -   From R studio do a `source("run_analysis.R")`  
 -   The R script produces a tidy data set of the source data  
 -   Check associated codebook here https://github.com/matt32106/datacleaning  
