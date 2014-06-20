@@ -62,9 +62,7 @@ For each Subject and Activity, the following variables are provided in the final
 "fBodyBodyGyroMag.std"     
 "fBodyBodyGyroJerkMag.mean" 
 "fBodyBodyGyroJerkMag.std" 
-
-**NOTE : Don't forget that the final values are the _average_ of the original data for one subject/activity, the column names were not modified in order to keep them as readable as possible.**
-
+  
 where  
 **t/f:** time data or Fourier transformed (frequency) data  
 **Body/Gravity:** raw data were separated into body and gravity acceleration signals via filtering  
@@ -72,7 +70,9 @@ where
 **Jerk:** derivation in time of the data  
 **Mag:** magnitude of the signal  
 **mean/std:** Mean or Standard deviation computation  
-  
+ 
+**NOTE : Don't forget that the final values are the _average_ of the original data for one subject/activity, the column names were not modified in order to keep them as readable as possible.**  
+
 For complete reference, please see the *features_info.txt* file in the original dataset.
 
 END OF FILE
