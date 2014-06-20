@@ -20,12 +20,12 @@ data file (tidyDataMeans.txt) in the working directory
   
 The R script file follows the logic of the coursera assignment by
 processing the original dataset in 5 steps:  
-1. Merges the training and the test sets to create one data set  
-  * Training and test sets files are read and put in a single data frame  
-2. Extracts only the measurements on the mean and standard deviation for each measurement  
-  * Columns are selected according to their name to keep only mean and std measures  
-  * This generates a subset of the original data frame  
-3. Uses descriptive activity names to name the activities in the data set  
+* Merges the training and the test sets to create one data set  
+  1. Training and test sets files are read and put in a single data frame  
+* Extracts only the measurements on the mean and standard deviation for each measurement  
+  1. Columns are selected according to their name to keep only mean and std measures  
+  2. This generates a subset of the original data frame  
+* Uses descriptive activity names to name the activities in the data set  
   -   Activity **codes** are replaced by activity **labels**  
 4.  Appropriately labels the data set with descriptive variable names  
   -   Column names are tweaked to be more human readable (hopefully)
